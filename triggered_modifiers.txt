@@ -1634,7 +1634,7 @@ control_over_gibraltar = {
 	
 	icon = 16
 }
-## Control over Öresund
+## Control over Ã–resund
 control_over_oresund = {
 	
 	potential = {
@@ -2069,50 +2069,52 @@ control_over_chihli_gulf = {
 	}
 	
 	trigger = {
-		or = {
-			and = {
-				5145 = {
-					controller = {
-						faction = this
-					}
-				}
-				5020 = {
-					controller = {
-						faction = this
-					}
-				5018 = {
-					controller = {
-						faction = this
-					}
-				5179 = {
-					controller = {
-						faction = this
-					}
-				5055 = {
-					controller = {
-						faction = this
-					}
-				5181 = {
-					controller = {
-						faction = this
-					}
-				4837 = {
-					controller = {
-						faction = this
-					}
-				}
+	
+		and = {
+			5145 = {
 				or = {
-					controls = 5145
-					controls = 5020
-					controls = 5018
-					controls = 5179
-					controls = 5055
-					controls = 5181
-					controls = 4837
+					controller = { vassal_of = this }
+					controlled_by = this
+				}
+			}
+			5020 = {
+				or = {
+					controller = { vassal_of = this }
+					controlled_by = this
+					}
+				}
+			5018 = {
+				or = {
+					controller = { vassal_of = this }
+					controlled_by = this
+					}
+				}
+			5179 = {
+				or = {
+					controller = { vassal_of = this }
+					controlled_by = this
+					}
+				}
+			5055 = {
+				or = {
+					controller = { vassal_of = this }
+					controlled_by = this
+					}
+				}
+			5181 = {
+				or = {
+					controller = { vassal_of = this }
+					controlled_by = this
+					}
+				}
+			4837 = {
+				or = {
+					controller = { vassal_of = this }
+					controlled_by = this
+					}
 				}
 			}	
 		}
-	}
 
 	research_efficiency = 0.025
 	supply_throughput = 0.15
